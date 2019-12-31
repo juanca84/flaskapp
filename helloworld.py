@@ -20,5 +20,6 @@ def mostrar_articulo(id):
 @app.errorhandler(404)
 def page_not_found(error):
     return '<h2>Página no encontrada</h2>', 404
+    
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
